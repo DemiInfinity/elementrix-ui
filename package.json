@@ -41,21 +41,28 @@
     "build-storybook": "storybook build"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.25.8",
+    "@babel/preset-react": "^7.25.7",
+    "@babel/preset-typescript": "^7.25.7",
     "@chromatic-com/storybook": "^1.9.0",
     "@stencil/core": "^4.7.0",
     "@storybook/addon-essentials": "^8.3.6",
     "@storybook/addon-interactions": "^8.3.6",
     "@storybook/addon-links": "^8.3.6",
+    "@storybook/addon-mdx-gfm": "^8.3.6",
+    "@storybook/addon-webpack5-compiler-babel": "^3.0.3",
     "@storybook/blocks": "^8.3.6",
     "@storybook/html": "^8.3.6",
     "@storybook/html-vite": "^8.3.6",
+    "@storybook/html-webpack5": "^8.3.6",
     "@storybook/test": "^8.3.6",
     "@types/jest": "^29.5.6",
     "@types/node": "^16.18.11",
     "jest": "^29.7.0",
     "jest-cli": "^29.7.0",
     "puppeteer": "^21.9.0",
-    "storybook": "^8.3.6"
+    "storybook": "^8.3.6",
+    "typescript": "^5.6.3"
   },
   "license": "MIT"
 }

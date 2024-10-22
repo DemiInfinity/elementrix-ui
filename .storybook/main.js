@@ -1,7 +1,18 @@
 module.exports = {
-  stories: ['../src/**/*.stories.@(js|jsx|ts|tsx|mjs|mdx)'],
-  addons: ['@storybook/addon-links', '@storybook/addon-essentials'],
-  framework: '@storybook/html',
+  stories: ['../src/**/*.@(mdx|stories.@(js|jsx|ts|tsx|mjs))'],
+  addons: [
+    '@storybook/addon-links',
+    '@storybook/addon-essentials',
+    '@storybook/addon-webpack5-compiler-babel',
+    '@chromatic-com/storybook',
+    '@storybook/addon-mdx-gfm'
+  ],
+
+  framework: {
+    name: "@storybook/html-webpack5",
+    options: {}
+  },
+
   webpackFinal: async (config) => {
     // Add Stencil loader
     config.module.rules.push({
@@ -17,4 +28,6 @@ module.exports = {
 
     return config;
   },
+
+  docs: {}
 };
