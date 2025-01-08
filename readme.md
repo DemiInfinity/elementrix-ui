@@ -101,10 +101,11 @@ As Elementrix-UI is still in its early stages, contributions are highly encourag
 ---
 ## 📝 License
 
-This project is licensed under the [MIT License](./LICENSE.md). See the LICENSE file for details.
+This project is licensed under the [MIT License](./LICENSE.md). See the LICENSE file for full details.
 
 ---
 ## 🌍 Join the Community
+
 Elementrix-UI is in its infancy, and we’re building it into a comprehensive, developer-first library for modern applications. Join us to shape its future!
 
 - GitHub Discussions: Join the Conversation (Comming soon)
