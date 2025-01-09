@@ -109,20 +109,3 @@ This project is licensed under the [MIT License](./LICENSE.md). See the LICENSE 
 Elementrix-UI is in its infancy, and we’re building it into a comprehensive, developer-first library for modern applications. Join us to shape its future!
 
 - GitHub Discussions: Join the Conversation (Comming soon)
-```yaml
-
----
-
-### **Key Updates**
-1. **Development Stage Highlighted**:
-   - The README clearly states that Elementrix-UI is in early development and focuses on foundational features.
-2. **Transparency and Collaboration**:
-   - Emphasizes the importance of community feedback and contributions during this phase.
-3. **Roadmap Inclusion**:
-   - A simple roadmap outlines what’s being worked on and planned, which can attract contributors.
-
----
-
-This version presents **Elementrix-UI** as an evolving project, inviting collaboration while setting realistic expectations for potential users and contributors. Let me know if you'd like further adjustments! 😊
-
-```
