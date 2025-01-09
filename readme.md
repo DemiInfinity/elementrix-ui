@@ -73,7 +73,7 @@ As Elementrix-UI is still in its early stages, contributions are highly encourag
 
 1. Fork the repository:
    ```bash
-   git clone https://github.com/yourusername/elementrix-ui.git
+   git clone https://github.com/DemiInfinity/elementrix-ui.git
    ```
 2. Install dependencies:
    ```bash
