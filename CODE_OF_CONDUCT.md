@@ -30,7 +30,7 @@ This Code of Conduct applies to all community spaces, including the project repo
 
 ## Enforcement
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the maintainers at [your-email@example.com]. All complaints will be reviewed and investigated promptly and fairly. 
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the maintainers on [Discord] (Coming soon). All complaints will be reviewed and investigated promptly and fairly. 
 
 Project maintainers who fail to address or enforce this Code of Conduct may face temporary or permanent consequences, as determined by other maintainers or community members.
 
