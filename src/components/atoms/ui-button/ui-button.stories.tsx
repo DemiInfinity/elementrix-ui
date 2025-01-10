@@ -43,7 +43,7 @@ export const Primary: Story = {
 
 export const Secondary: Story = {
   args: {
-    size: 'medium',
+    size: "small",
     theme: 'secondary',
     disabled: false,
     text: 'Secondary Button',
@@ -57,7 +57,7 @@ export const Secondary: Story = {
 
 export const Disabled: Story = {
   args: {
-    size: 'medium',
+    size: "small",
     theme: 'primary',
     disabled: true,
     text: 'Disabled Button',
