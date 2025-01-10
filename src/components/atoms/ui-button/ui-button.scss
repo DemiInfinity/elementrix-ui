@@ -1,55 +1,57 @@
+@import "../../../global/styles.scss";
+@import "../../../global/base.scss";
+
 .ui-button {
-    border: none;
-    border-radius: 0.375rem;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-  
-    &.small {
-      padding: 0.5rem 1rem;
-      font-size: 0.875rem;
-    }
-  
-    &.medium {
-      padding: 0.5rem 1.25rem;
-      font-size: 1rem;
-    }
-  
-    &.large {
-      padding: 0.75rem 1.5rem;
-      font-size: 1.125rem;
-    }
-  
-    &.primary {
-      background-color: #3b82f6; // blue-500
-      color: white;
-  
-      &:hover {
-        background-color: #1d4ed8; // blue-700
-      }
-    }
-  
-    &.secondary {
-      background-color: #4b5563; // gray-600
-      color: white;
-  
-      &:hover {
-        background-color: #6b7280; // gray-500
-      }
-    }
-  
-    &.danger {
-      background-color: #ef4444; // red-500
-      color: white;
-  
-      &:hover {
-        background-color: #dc2626; // red-600
-      }
-    }
-  
-    &.disabled {
-      background-color: #d1d5db; // gray-300
-      color: #9ca3af; // gray-400
-      cursor: not-allowed;
+  border: none;
+  border-radius: 0.375rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  &.small {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+
+  &.medium {
+    padding: 0.5rem 1.25rem;
+    font-size: 1rem;
+  }
+
+  &.large {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.125rem;
+  }
+
+  &.primary {
+    background-color: #3b82f6;
+    color: white;
+
+    &:hover {
+      background-color: #1d4ed8;
     }
   }
-  
+
+  &.secondary {
+    background-color: #4b5563;
+    color: white;
+
+    &:hover {
+      background-color: #6b7280;
+    }
+  }
+
+  &.danger {
+    background-color: #ef4444;
+    color: white;
+
+    &:hover {
+      background-color: #dc2626;
+    }
+  }
+
+  &.disabled {
+    background-color: #d1d5db;
+    color: #9ca3af;
+    cursor: not-allowed;
+  }
+}

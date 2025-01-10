@@ -3,6 +3,7 @@ import type { Meta, StoryObj } from '@storybook/html';
 const meta: Meta = {
   title: 'Atoms/Button',
   component: 'ui-button',
+  tags: ['autodocs'],
   argTypes: {
     size: {
       control: { type: 'select' },
@@ -33,10 +34,11 @@ export const Primary: Story = {
     disabled: false,
     text: 'Primary Button',
   },
-  render: (args) =>
-    `<ui-button size="${args.size}" theme="${args.theme}" ${
+  render: (args) => {
+    return `<ui-button size="${args.size}" theme="${args.theme}" ${
       args.disabled ? 'disabled' : ''
-    }>${args.text}</ui-button>`,
+    }>${args.text}</ui-button>`;
+  },
 };
 
 export const Secondary: Story = {
@@ -46,10 +48,11 @@ export const Secondary: Story = {
     disabled: false,
     text: 'Secondary Button',
   },
-  render: (args) =>
-    `<ui-button size="${args.size}" theme="${args.theme}" ${
+  render: (args) => {
+    return `<ui-button size="${args.size}" theme="${args.theme}" ${
       args.disabled ? 'disabled' : ''
-    }>${args.text}</ui-button>`,
+    }>${args.text}</ui-button>`;
+  },
 };
 
 export const Disabled: Story = {
@@ -59,8 +62,9 @@ export const Disabled: Story = {
     disabled: true,
     text: 'Disabled Button',
   },
-  render: (args) =>
-    `<ui-button size="${args.size}" theme="${args.theme}" ${
+  render: (args) => {
+    return `<ui-button size="${args.size}" theme="${args.theme}" ${
       args.disabled ? 'disabled' : ''
-    }>${args.text}</ui-button>`,
+    }>${args.text}</ui-button>`;
+  },
 };

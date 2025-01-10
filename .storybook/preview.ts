@@ -1,19 +1,20 @@
-import { Preview } from '@storybook/html';
-import '../src/global/styles.scss'; // Make sure the path is correct
+// .storybook/preview.ts
 
-const preview: Preview = {
-  parameters: {
-    actions: { argTypesRegex: '^on.*' },
-    controls: {
-      matchers: {
-        color: /(background|color)$/i,
-        date: /Date$/,
-      },
+import { defineCustomElements } from '../dist/loader'; // Make sure this path points to the compiled loader
+
+// Ensure Stencil components are registered
+defineCustomElements(window); // Ensures custom elements are properly defined for Storybook
+
+// Optionally, you can add global decorators for Storybook
+export const parameters = {
+  actions: { argTypesRegex: '^on[A-Z].*' },
+  docs: {
+    source: {
+      state: 'open', // Automatically open the source code in the docs tab
     },
-    docs: {
-      inlineStories: true,
-    },
+  },
+  controls: {
+    expanded: true, // Make the controls panel more accessible
   },
 };
 
-export default preview;

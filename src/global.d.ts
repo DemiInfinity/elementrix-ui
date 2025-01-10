@@ -1,12 +1,13 @@
-// src/global.d.ts or in the root of your project
+// global.d.ts
 declare namespace JSX {
-  // Stencil's JSX intrinsic elements
-  interface IntrinsicElements {
-    'ui-button': any; // Example component, add others as needed
-    // Add more components here
+    interface IntrinsicElements {
+      // Declare your custom elements here
+      'ui-button': any; // Replace 'my-component' with the actual custom element names you're using.
+      // Example: 'ui-button': any;
+    }
+  
+    // If you're still getting JSX.Element errors, add the following:
+    type Element = HTMLElement;
+    type ElementClass = HTMLElement;
   }
   
-  // These are the missing types from the error
-  type Element = any;
-  type ElementClass = any;
-}

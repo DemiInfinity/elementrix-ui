@@ -1,11 +1,13 @@
 import type { StorybookConfig } from '@storybook/html-webpack5';
+import path from 'path';
 
 const config: StorybookConfig = {
-  stories: ['../src/**/*.stories.@(js|jsx|ts|tsx|mdx)'],
+  stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
   addons: [
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
     '@storybook/addon-docs',
+    '@storybook/addon-styling-webpack',
   ],
   framework: {
     name: '@storybook/html-webpack5',
@@ -14,32 +16,28 @@ const config: StorybookConfig = {
   core: {
     builder: 'webpack5',
   },
+  docs:{
+    autodocs: true,
+  },
   webpackFinal: async (config) => {
     // Add TypeScript loader
-    config.module?.rules?.push({
-      test: /\.(ts|tsx)$/,
-      use: [
-        {
-          loader: 'ts-loader',
-          options: { transpileOnly: true },
-        },
-      ],
-      exclude: /node_modules/,
-    });
-  
-    // Add SCSS loader support
-    config.module?.rules?.push({
-      test: /\.scss$/,
-      use: [
-        'style-loader',
-        'css-loader',
-        'sass-loader', // Make sure SCSS is handled properly
-      ],
-    });
-  
+    if(config.module && config.module.rules){
+      config.module.rules.push({
+        test: /\.(ts|tsx)$/,
+        use: [
+          {
+            loader: 'ts-loader',
+            options: { transpileOnly: true },
+          },
+        ],
+        exclude: /node_modules/,
+      });
+    }
     // Extend file resolution for SCSS
-    config.resolve?.extensions?.push('.ts', '.tsx', '.scss');
-  
+    if (config.resolve && config.resolve.extensions) {
+      config.resolve.extensions.push('.ts', '.tsx', '.css', '.scss');
+    }
+      
     return config;
   },
   

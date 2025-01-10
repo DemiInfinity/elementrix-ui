@@ -1,8 +1,8 @@
-import { Component, Prop, h } from '@stencil/core';
+import {Component, Prop, h} from '@stencil/core';
 
 @Component({
   tag: 'ui-button',
-  styleUrl: 'ui-button.scss',  // Make sure this path is correct
+  styleUrl: 'ui-button.scss',
   shadow: true,
 })
 export class UiButton {
@@ -21,6 +21,3 @@ export class UiButton {
     );
   }
 }
-
-// Remove this export line:
-// export { UiButton };
