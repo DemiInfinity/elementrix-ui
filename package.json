@@ -36,7 +36,9 @@
     "chromatic": "npx chromatic --project-token=chpt_1a8802be88ce699",
     "lint": "eslint \"src/**/*.{tsx,jsx}\"",
     "lint:generate": "eslint \"src/**/*.{tsx,jsx}\" -o output.eslint.json -f json",
-    "lint:fix": "eslint \"src/**/*.{tsx,jsx}\" --fix"
+    "lint:fix": "eslint \"src/**/*.{tsx,jsx}\" --fix",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
   },
   "resolutions": {
     "@types/babel__traverse": "^7.20.6",
