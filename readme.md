@@ -95,8 +95,8 @@ As Elementrix-UI is still in its early stages, contributions are highly encourag
 - Component Framework: Stencil.js
 - Documentation: Storybook
 - Language: TypeScript
-- Styling: CSS Variables for customization
-- Testing: Jest for unit tests and Playwright for end-to-end testing
+- Styling: SCSS Variables for customization
+- Testing: Stencils in built testing for unit tests and E2E coming soon
 - Build Tool: Rollup for efficient bundling
 ---
 ## 📝 License
