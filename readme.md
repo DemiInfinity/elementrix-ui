@@ -8,7 +8,7 @@
 
 ## 🌟 **Features**
 
-### **Current Features**
+### **Up Coming Features**
 - **Reusable Components**: A limited set of core components, including buttons and modals, for basic UI needs.
 - **Customizable Styles**: Easily adapt component appearance with CSS Variables to fit your design system.
 - **Framework-Agnostic**: Use components with React, Vue, Angular, or vanilla JavaScript.
