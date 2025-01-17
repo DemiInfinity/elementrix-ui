@@ -77,7 +77,7 @@ As Elementrix-UI is still in its early stages, contributions are highly encourag
    ```
 2. Install dependencies:
    ```bash
-   npm install
+   yarn
    ```
 3. Start the development server:
    ```bash
