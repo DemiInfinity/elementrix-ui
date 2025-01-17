@@ -1,4 +1,4 @@
-// global.d.ts
+// @typescript-eslint/no-explicit-any
 declare namespace JSX {
     interface IntrinsicElements {
       // Declare your custom elements here
