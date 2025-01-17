@@ -1,26 +1,25 @@
 import { Config } from '@stencil/core';
+import { sass } from '@stencil/sass';
 
 export const config: Config = {
   namespace: 'elementrix-ui',
   outputTargets: [
     {
       type: 'dist',
-      esmLoaderPath: '../loader',
-    },
-    {
-      type: 'dist-custom-elements',
-      customElementsExportBehavior: 'auto-define-custom-elements',
-      externalRuntime: false,
+      esmLoaderPath: './loader',  // Update this to point to 'loader' inside 'dist'
     },
     {
       type: 'docs-readme',
     },
     {
       type: 'www',
-      serviceWorker: null, // disable service workers
+      dir: 'www',
+      serviceWorker: null, // Disable service worker
     },
   ],
-  testing: {
-    browserHeadless: "new",
-  },
+  plugins: [
+    sass({
+      injectGlobalPaths: ['src/global/styles.scss'], // Ensure this path is correct
+    }),
+  ],
 };
