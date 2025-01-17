@@ -104,6 +104,16 @@ As Elementrix-UI is still in its early stages, contributions are highly encourag
 This project is licensed under the [MIT License](./LICENSE.md). See the LICENSE file for full details.
 
 ---
+## Donations
+
+Donations are used for:
+- Development time and improvements
+- Hosting and infrastructure costs
+- Maintenance and bug fixes
+
+[Donate via Patreon](https://www.patreon.com/elementrixui)
+
+---
 ## 🌍 Join the Community
 
 Elementrix-UI is in its infancy, and we’re building it into a comprehensive, developer-first library for modern applications. Join us to shape its future!
