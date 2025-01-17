@@ -26,7 +26,7 @@
 
 Install the library using npm:
   ```bash
-  npm install @elementrix-ui/component-library
+  yarn add @elementrix-ui/component-library
   ```
 ---
 ## 🚀 **Getting Started**
@@ -81,11 +81,11 @@ As Elementrix-UI is still in its early stages, contributions are highly encourag
    ```
 3. Start the development server:
    ```bash
-   npm start
+   yarn start
    ```
 4. Run Storybook:
    ```bash
-   npm run storybook
+   yarn storybook
    ```
 5. Make your changes: Add components, fix bugs, or enhance documentation.
 6. Submit a pull request: Open a PR on GitHub to contribute your work.
